@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const TodosSchema = new mongoose.Schema({
+const TodosSchemaRu = new mongoose.Schema({
   text: {
     type: String,
     trim: true,
@@ -16,4 +16,4 @@ const TodosSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("Todos", TodosSchema);
+module.exports = mongoose.model("TodosRu", TodosSchemaRu);

@@ -41,38 +41,36 @@ export default function Addtodocomponent() {
   return (
     <div>
       <Container>
-        <Row>
-          <Button
-            color="dark"
-            className="d-flex justify-content-center"
-            onClick={toggle}
-            style={btnStyle}>
-            Add todo
-          </Button>
-        </Row>
+        <Button
+          color="dark"
+          className="d-flex justify-content-center"
+          onClick={toggle}
+          style={btnStyle}>
+          Добавить задачу
+        </Button>
       </Container>
       <Modal isOpen={isOpen} toggle={toggle}>
-        <ModalHeader>Add todo to todolist</ModalHeader>
+        <ModalHeader>Добавить задачу в список дел</ModalHeader>
         <ModalBody>
           <Form onSubmit={onSubmit}>
             <FormGroup>
-              <Label for="text"> What should you do?</Label>
+              <Label for="text"> Что нужно сделать?</Label>
               <Input
                 type="text"
                 id="text"
                 name="name"
-                placeholder="write a task"
+                placeholder="напишите что-нибудь..."
                 onChange={(e) => setText(e.target.value)}></Input>
             </FormGroup>
             <FormGroup>
-              <Label for="finishedAt"> Untill when you should do </Label>
+              <Label for="finishedAt"> Когда нужно это сделать </Label>
               <Input
                 type="date"
                 name="finishedAt"
                 id="finishedAt"
                 onChange={(e) => setFinishedAt(e.target.value)}></Input>
               <Button color="dark" style={{ marginTop: '2rem' }} block>
-                Add todo
+                Добавить задачу в список
               </Button>
             </FormGroup>
           </Form>

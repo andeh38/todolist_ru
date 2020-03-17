@@ -25,15 +25,15 @@ export default function AppNavbar() {
   return (
     <div>
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto">Список дел</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="https://expensetracker-ru.herokuapp.com/" target="_blank">Счетчик затрат</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="https://github.com/andeh38/" target="_blank">GitHub</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

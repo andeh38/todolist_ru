@@ -8,7 +8,7 @@ export default function  Todo ({todo}){
   
   return (
     <ListGroupItem>
-      <h4>{todo.text}</h4> {'untill'} {date.toLocaleDateString()} {'   '}
+      <h4>{todo.text}</h4> {'сделать до'} {date.toLocaleDateString()} {'   '}
       <Button onClick={()=> deleteTodo(todo._id)}>X</Button>
     </ListGroupItem>
   )

@@ -1,4 +1,4 @@
-const Todo = require('../models/todos');
+const Todo = require('../models/todosRu');
 
 //GET all todos
 // route GET/api/v1/todos
