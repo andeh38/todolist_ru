@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-import { ListGroup, ListGroupItem, Container } from 'reactstrap';
+import { ListGroup,  Container } from 'reactstrap';
 import { GlobalContext } from '../../context/GlobalState';
 import Todo from './Todo';
 
