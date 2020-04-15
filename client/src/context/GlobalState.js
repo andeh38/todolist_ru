@@ -33,19 +33,22 @@ export const GloblaProvider = ({ children }) => {
     }
   }
 
-  async function deleteTodo(id) {
-    try {
-      await axios.delete(`/api/v1/todos/${id}`);
-      dispatch({
-        type: 'DELETE_TODO',
-        payload: id
-      });
-    } catch (err) {
-      dispatch({
-        type: 'TODO_ERROR',
-        payload: err.response.data.error
-      });
-    }
+  async function deleteTodo(ids) {
+    ids.map(async (id) => {
+      try {
+        await axios.delete(`/api/v1/todos/${id}`);
+        dispatch({
+          type: 'DELETE_TODO',
+          payload: id
+        });
+      } catch (err) {
+        dispatch({
+          type: 'TODO_ERROR',
+          payload: err.response.data.error
+        });
+      }
+    })
+
   }
 
   async function addTodo(todo) {

@@ -9,8 +9,6 @@ import {
   FormGroup,
   Label,
   Input,
-  Container,
-  Row
 } from 'reactstrap';
 
 export default function Addtodocomponent() {
@@ -29,7 +27,7 @@ export default function Addtodocomponent() {
 
     const newTodo = {
       text,
-      finishedAt
+      finishedAt,
     };
 
     addTodo(newTodo);
@@ -40,15 +38,13 @@ export default function Addtodocomponent() {
 
   return (
     <div>
-      <Container>
-        <Button
-          color="dark"
-          className="d-flex justify-content-center"
-          onClick={toggle}
-          style={btnStyle}>
-          Добавить задачу
-        </Button>
-      </Container>
+      <Button
+        color="dark"
+        /*           className="d-flex justify-content-center"
+          style={btnStyle} */
+        onClick={toggle}>
+        Добавить задачу
+      </Button>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader>Добавить задачу в список дел</ModalHeader>
         <ModalBody>
@@ -82,5 +78,5 @@ export default function Addtodocomponent() {
 
 const btnStyle = {
   marginTop: '2rem',
-  marginBottom: '2rem'
+  marginBottom: '2rem',
 };

@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-material.css';
 import AppNavbar from './components/AppNavbar';
-import Addtodocomponent from './components/todolist/Addtodocomponent';
 import { GloblaProvider } from './context/GlobalState';
-import Todoslistcomponent from './components/todolist/Todoslistcomponent';
+import {GridComponent}from './components/todolist/GridComponent'
 
 function App() {
   return (
     <GloblaProvider>
       <div className="App">
         <AppNavbar></AppNavbar>
-        <Addtodocomponent></Addtodocomponent>
-        <Todoslistcomponent></Todoslistcomponent>
+        <GridComponent></GridComponent>
       </div>
     </GloblaProvider>
   );

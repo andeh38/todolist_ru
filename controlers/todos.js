@@ -44,7 +44,7 @@ exports.addTodo = async (req, res, next) => {
   }
 };
 
-//delete all todos
+//delete todos
 // route DELETE/api/v1/transactons/:id
 exports.deleteTodo = async (req, res, next) => {
   try {
@@ -68,3 +68,4 @@ exports.deleteTodo = async (req, res, next) => {
     });
   }
 };
+

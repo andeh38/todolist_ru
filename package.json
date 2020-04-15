@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "ag-grid-community": "^23.0.2",
+    "ag-grid-react": "^23.0.3",
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
